@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Advanced Image Gallery</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+  <h1>📷 Image Gallery</h1>
+
+  <div class="filter-buttons">
+    <button data-filter="all">All</button>
+    <button data-filter="nature">Nature</button>
+    <button data-filter="city">City</button>
+    <button data-filter="animals">Animals</button>
+  </div>
+
+  <div class="gallery">
+    <div class="gallery-item" data-category="nature">
+      <img src="https://picsum.photos/id/1015/400/300" alt="Nature 1">
+    </div>
+    <div class="gallery-item" data-category="city">
+      <img src="https://picsum.photos/id/1011/400/300" alt="City 1">
+    </div>
+    <div class="gallery-item" data-category="animals">
+      <img src="https://picsum.photos/id/1025/400/300" alt="Animal 1">
+    </div>
+    <div class="gallery-item" data-category="nature">
+      <img src="https://picsum.photos/id/1003/400/300" alt="Nature 2">
+    </div>
+    <div class="gallery-item" data-category="city">
+      <img src="https://picsum.photos/id/1006/400/300" alt="City 2">
+    </div>
+  </div>
+
+  <div class="lightbox" id="lightbox">
+    <span class="close">&times;</span>
+    <img class="lightbox-image" id="lightbox-img" src="" alt="">
+    <div class="navigation">
+      <button id="prev">&#10094;</button>
+      <button id="next">&#10095;</button>
+    </div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
